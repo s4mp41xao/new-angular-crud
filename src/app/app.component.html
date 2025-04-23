@@ -1,9 +1,19 @@
 <div class="container mt-5">
-  <p>Inicio do App</p>
+  <p>Inicio do App Component</p>
+
+  <ul>
+    <li [routerLink]="['/hello']" routerLinkActive="router-link-active">
+      Hello
+    </li>
+    <li [routerLink]="['hello/list']" routerLinkActive="router-link-active">
+      List
+    </li>
+    <li [routerLink]="['']" routerLinkActive="router-link-active">App</li>
+  </ul>
 
   <router-outlet />
 
-  <p>Fim do App</p>
+  <p>Fim do App Component</p>
 
   <!-- <app-hello [items]="items" (alertOnClick)="alertOnClick()" /> -->
 </div>
