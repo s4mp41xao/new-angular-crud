@@ -1,13 +1,9 @@
-<p>Inicio do App</p>
+<div class="container mt-5">
+  <p>Inicio do App</p>
 
-<p>Olá, {{ name }}</p>
+  <router-outlet />
 
-<p>Counter: {{ contador }}</p>
+  <p>Fim do App</p>
 
-<button class="btn btn-primary" (click)="incrementCount()">Add</button>
-
-<router-outlet />
-
-<p>Fim do App</p>
-
-<app-hello />
+  <app-hello [items]="items" (alertOnClick)="alertOnClick()" />
+</div>

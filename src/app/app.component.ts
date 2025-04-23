@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HelloComponent } from './initial/hello/hello.component';
 
@@ -11,11 +11,9 @@ import { HelloComponent } from './initial/hello/hello.component';
 export class AppComponent {
   title = 'angular-first-crud';
 
-  name = 'Samuel';
+  items = ['morango', 'pera', 'abacate'] as any;
 
-  contador = 0;
-
-  incrementCount() {
-    this.contador++;
+  alertOnClick() {
+    alert('Button clicked');
   }
 }
